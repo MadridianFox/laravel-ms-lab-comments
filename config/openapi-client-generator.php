@@ -57,20 +57,20 @@ return [
         /*
          * Package name for composer, use standard pattern namespace/package
          */
-        'composer_name' => 'ensi/backend-service-skeleton-client',
+        'composer_name' => 'lab/comments-client',
 
         /*
          * Specific generator params from https://openapi-generator.tech/docs/generators/php/
          */
         'params' => [
             'apiPackage' => 'Api',
-            'invokerPackage' => 'Ensi\BackendServiceSkeletonClient',
+            'invokerPackage' => 'Lab\CommentsClient',
             'modelPackage' => 'Dto',
-            'packageName' => 'BackendServiceSkeletonClient',
+            'packageName' => 'CommentsClient',
         ],
 
 
-        'laravel_package_config_key' => 'openapi-clients.backend-service-skeleton',
+        'laravel_package_config_key' => 'openapi-clients.comments-client',
 
         'files_to_ignore_during_cleanup' => ['.git', '.gitignore'],
 
