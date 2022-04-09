@@ -1,0 +1,36 @@
+CommentListResponse:
+  type: object
+  properties:
+    data:
+      type: array
+      items:
+        $ref: '#/Comment'
+  required:
+    - data
+
+Comment:
+  type: object
+  properties:
+    id:
+      type: integer
+    author:
+      type: string
+    author_id:
+      type: string
+    text:
+      type: string
+    post_code:
+      type: string
+    created_at:
+      type: string
+    updated_at:
+      type: string
+      nullable: true
+  required:
+    - id
+    - author
+    - author_id
+    - text
+    - post_code
+    - created_at
+    - updated_at
